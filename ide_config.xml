@@ -1,0 +1,20 @@
+<application>
+
+	<name>My Database View</name>
+	<version>1.1</version>
+	<description>Another option for viewing database records
+	and performing adhoc queries.</description>	
+	<license>license.html</license>
+    <menucontributions>
+		<contribution target="rdsview">
+		<menu name="My Database View"> 
+		<action name="Show Contents" handlerid="process" showResponse="true" />
+		</menu>
+		</contribution>
+    </menucontributions>	
+
+	<handlers>		
+		<handler id="process" type="CFM" filename="process.cfm" />
+	</handlers>
+
+</application>
